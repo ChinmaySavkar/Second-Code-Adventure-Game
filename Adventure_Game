@@ -1,0 +1,19 @@
+#New Game. First letter of the word must be capital.
+
+name = input('Type your name: ')
+print('Welcome to this adventure', name)
+answer = input('You start your journey and come across a rusty old bridge. Would you like to cross it? Y or N?')
+if answer == 'Y' or 'y':
+    answer = input('You continue to go straight and come across some crocodiles. Do you take your chances and run across or do you stay safe? Jump or Stay?')
+    if answer == 'Jump' or 'jump':
+        answer = input('You jump across and luckily, the crocodiiles were too slow. You then come across an old church. Do you investigate? Y or N?')
+        if answer == 'Y':
+            answer = print('You decide to investigate and you find a hidden treasure in the attic. You win!' )
+        else:
+            print('You take another path which leads to you being lost in the jungle. You have the option to call for help, but your phone died. You lose.')
+
+    else:
+        print('You take another path which leads to you being lost in the jungle. You have the option to call for help, but your phone died. You lose.' )
+else:
+    print('You have stopped your journey. Have a great day.')
+print('Thank you for playing', name)
